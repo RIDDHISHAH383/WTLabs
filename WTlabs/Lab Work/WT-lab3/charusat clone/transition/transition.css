@@ -1,0 +1,8 @@
+div{
+    width:100px;
+    transition: width 2s;
+}
+div :hover{
+    width: 300px;
+}
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .header {
+        text-align: center;
+      }
+      .form {
+        margin-left: 550px;
+        padding: 20px 20px;
+        margin-right: 400px;
+        
+      }
+      body {
+        box-sizing: border-box;
+        display: grid;
+        align-items: center;
+        background-color: rgb(189, 255, 193);
+        
+      }
+    </style>
+    <title>FORM</title>
+  </head>
+  <body>
+    <div class="form-t">
+      <h2 class="header"><u>ADMISSION FORM:</u></h2>
+      <br />
+      <form class="form" method="post">
+        <label><strong>YOUR NAME:</strong></label>
+        <input
+          type="text"
+          name="NAME"
+          placeholder="Enter your name"
+          required
+        /><br />
+        <br />
+        <label><strong>AGE:</strong></label>
+        <input
+          type="number"
+          name="AGE"
+          placeholder="Enter your age"
+          required
+        /><br />
+        <br />
+        <label><strong>BIRTH DATE:</strong></label>
+        <input
+          type="date"
+          name="Birthdate"
+          required
+          placeholder="Enter your birthdate"
+        /><br />
+        <br />
+        <label><strong>MOBILE NO:</strong></label>
+        <input
+          type="tel"
+          placeholder="Enter your mobile no"
+          name="MOBILE NO"
+          required
+        /><br />
+        <br />
+        <label><strong>YOUR GENDER:</strong></label>
+        <input type="radio" name="gender" checked />Male
+        <input type="radio" name="gender" />Female
+        <input type="radio" name="gender" />Other<br />
+        <br />
+        <label><strong>E-MAIL ID:</strong></label>
+        <input
+          type="email"
+          placeholder="Enter your e-mail"
+          name="E-MAIL"
+          required
+        /><br />
+        <br />
+        <label><strong>UPLOAD GUJCAT MARKSHEET:</strong></label>
+        <input type="file"" placeholder="FILE" name="FILE" required/><br />
+        <br />
+        <label><strong>UPLOAD JEE MARKSHEET:</strong></label>
+        <input type="file"" placeholder="FILE" name="FILE" required/><br />
+        <br />
+        <label><strong>MONTH OF ADMISSION:</strong></label>
+        <input
+          type="month"
+          placeholder="Your month of admission"
+          name="MONTH OF JOINING"
+          required
+        /><br />
+        <br />
+        <label><strong></strong></label>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+          type="submit"
+        />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+        <input type="reset" />
+      </form><br><br>
+      <a href="timetable.html">LINK OF TABLE</a>
+    </div>
+  </body>
+</html>

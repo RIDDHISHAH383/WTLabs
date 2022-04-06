@@ -1,0 +1,25 @@
+
+*{/*for giving space between 2 horizontal lines*/
+    padding: 0px;
+    margin: 0px;
+}
+.outer{
+    width : 700px;
+    height : 800px;
+    margin :0px auto;
+    
+}
+.border{
+    width: auto;
+    padding: 0%;
+    background-color: rgb(180, 170, 170);
+    border: 1px solid rgb(180, 170, 170) ;
+    font-size: medium;
+    font-weight: bold;
+}
+.space{
+    line-height: 80%;
+}
+ul{
+    margin-left: 30px;
+}

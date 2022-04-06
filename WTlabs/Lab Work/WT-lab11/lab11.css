@@ -1,0 +1,39 @@
+.surat {
+  margin: auto;
+  background-image: url("surati locho.jpg");
+  width: 100%;
+  height: 550px;
+  background-repeat: no-repeat;
+  background-position: center cover;
+  
+}
+
+.vadodra {
+  margin: auto;
+  background-image: url("jagdish\ farshan.jpg.crdownload");
+  width: 100%;
+  height: 550px;
+  background-repeat: no-repeat;
+  background-position: center cover;
+  
+}
+
+.nadiad {
+  margin: auto;
+  background-image: url("santram mandir.jpg");
+  width: 100%;
+  height: 550px;
+  background-repeat: no-repeat;
+  background-position: center cover;
+  
+}
+
+.anand {
+  margin: auto;
+  background-image: url("amul.jpg");
+  width: 100%;
+  height: 550px;
+  background-repeat: no-repeat;
+  background-position: center cover;
+  
+}

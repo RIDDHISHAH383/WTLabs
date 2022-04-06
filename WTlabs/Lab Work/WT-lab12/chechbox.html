@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selected Ckeckbox</title>
+    <script type="text/javascript">
+      function selectAll() {
+        let place = document.getElementsByName("place");
+        let placeLen = place.length;
+        for (var x = 0; x < placeLen; x++) {
+          place[x].checked = true;
+        }
+      }
+      function uncheckedAll() {
+        let place = document.getElementsByName("place");
+        let placeLen = place.length;
+        for (var x = 0; x < placeLen; x++) {
+          place[x].checked = false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h4>Select your favourite place of Trakking :</h4>
+    panchmadhi: <input type="checkbox" id="check1" name="place" value="Panchmadhi" />
+    <br />
+    Jammu: <input type="checkbox" id="check2" name="place" value="Jammu" />
+    <br />
+    Manali: <input type="checkbox" id="check3" name="place" value="Manali" />
+    <br />
+    mount-abu: <input type="checkbox" id="check4" name="place" value="mount-abu" />
+    <br />
+    Kedarnath:
+    <input type="checkbox" id="check5" name="place" value="Kedarnath" /> <br />
+    <br />
+    <br />
+    <input type="button" onclick="selectAll()" value="Select All" /> <br />
+    <input type="button" onclick="uncheckedAll()" value="uncheckedAll" /><br />
+    <button id="btn">Submit</button>
+    <br />
+    <h4 style="color: green" id="result"></h4>
+    <br />
+    <script>
+      document.getElementById("btn").onclick = function () {
+        var markedCheckbox = document.getElementsByName("place");
+        for (var checkbox of markedCheckbox) {
+          if (checkbox.checked) document.body.append(checkbox.value + " ");
+        }
+      };
+    </script>
+  </body>
+</html>
