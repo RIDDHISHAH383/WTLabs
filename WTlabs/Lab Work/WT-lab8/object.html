@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+    <style>
+      .text {
+        font-size: 1rem;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text">
+      <h1 class="TITLE"><u>Java built in object Object:</u></h1>
+      <p class="fun">
+        A method in object-oriented programming (OOP) is a procedure associated
+        with a message and an object. An object consists of data and behavior;
+        these compose an interface, which specifies how the object may be
+        utilized by any of its various consumers.
+      </p>
+      <h3 class="fun"><u>Constructor Function</u></h3>
+      <script>
+        function emp(id, name, salary) {
+          this.id = id;
+          this.name = name;
+          this.salary = salary;
+        }
+        e = new emp(103, "Vimal Jaiswal", 30000);
+        document.write(e.id + " " + e.name + " " + e.salary);
+        document.write("<br />");
+      </script>
+      <h3 class="fun"><u>Multiple Object Function</u></h3>
+      <script>
+        function emp(id, name, salary) {
+          this.id = id;
+          this.name = name;
+          this.salary = salary;
+
+          this.changeSalary = changeSalary;
+          function changeSalary(otherSalary) {
+            this.salary = otherSalary;
+          }
+        }
+        e = new emp(103, "Sonoo Jaiswal", 30000);
+        document.write(e.id + " " + e.name + " " + e.salary);
+        e.changeSalary(45000);
+        document.write("<br>" + e.id + " " + e.name + " " + e.salary);
+      </script>
+    </div>
+  </body>
+</html>

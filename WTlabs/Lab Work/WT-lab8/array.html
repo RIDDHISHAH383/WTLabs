@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array</title>
+    <style>
+      .text {
+        font-size: 1rem;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana,serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text">
+      <h1 class="TITLE"><u>Java built in object Array:</u></h1>
+      <p class="fun">
+        The Array object is used to store multiple values in a single variable:
+        const name = ["Riddhi", "Vishwa", "Siri"]; Array indexes are zero-based: The
+        first element in the array is 0, the second is 1, and so on. For a
+        tutorial about Arrays, read our JavaScript Array Tutorial.
+      </p>
+      <h3 class="fun"><u>Every Function</u></h3>
+      <script type="text/javascript">
+        if (!Array.prototype.every) {
+          Array.prototype.every = function (fun /*, thisp*/) {
+            var len = this.length;
+            if (typeof fun != "function") throw new TypeError();
+            var thisp = arguments[1];
+            for (var i = 0; i < len; i++) {
+              if (i in this && !fun.call(thisp, this[i], i, this)) return false;
+            }
+            return true;
+          };
+        }
+        function isBigEnough(element, index, array) {
+          return element >= 10;
+        }
+        var passed = [12, 5, 8, 130, 44].every(isBigEnough);
+        document.write("First Test Value : " + passed);
+        document.write("<br />");
+        passed = [12, 54, 18, 130, 44].every(isBigEnough);
+        document.write("Second Test Value : " + passed);
+      </script>
+      <h3 class="fun"><u>Reverse Function</u></h3>
+      <script type = "text/javascript">
+         var arr = [0, 1, 2, 3].reverse();
+         document.write("Reversed array is : " + arr ); 
+      </script>  
+    </div>
+  </body>
+</html>
